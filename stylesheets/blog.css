@@ -1,13 +1,13 @@
 h1 {
   background-color: #FF5E00
-  width: 95%;
   height: 1.5em;
   border-width: 3px;
   border-style: solid;
   border-color: white;
   font-size: 200%;
   padding: .5em .5em .5em .5em;
-  position: relative;
+  position: static;
+  width: 95%;
   margin: 5px 5px 5px 5px;
 }
 /* Why is the orange background color not showing up? */
