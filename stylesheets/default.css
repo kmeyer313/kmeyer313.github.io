@@ -1,19 +1,26 @@
 html {
-  font-family: Tw Cen MT, Helvetica;
+  font-family: "Tw Cen MT", Helvetica;
   background-color: #00B2B2;
+}
+
+h1 {
+  border: 3px solid white;
+  width: 50%;
+  margin: 10px 25% 10px 25%;
+  padding: .5em;
+  text-align: center;
 }
 
 .navigation {
   background-color: #FF5E00;
   width: 95%;
-  height: 1.5em;
   border-width: 3px;
-  border-style: ridge;
+  border-style: solid;
   border-color: white;
   font-size: 125%;
   padding: 1em 1em 1em 1em;
   position: relative;
-  margin: 5px 5px 5px 5px;
+  margin: 0 auto;
 }
 
 /*I tried redoing my navigation bar. At first I had used a table in html to create the structure. But after some research, I determined a list would be better. I watched this video and now am a little stuck. I kept some elements form before that I thought I liked, but I would still like to get them centered in the middle. I feel like there has to be an easier way than futzing with the padding, height, and width? Before I had it responsive to the window size. Doesn't seem to be responding anymore. https://www.youtube.com/watch?v=_ovlvYH782c */
@@ -30,7 +37,7 @@ html {
 .navigation ul li a {
   float: left;
   display: block;
-  padding: 0px 30px;
+  padding: 0px 40px;
 }
 
 a:link {
@@ -53,51 +60,73 @@ a:hover {
 
 #picture {
   margin: .5em .5em .5em .5em;
-  border: 3px ridge white;
-/* I am still stuck here... I don't know how to get the border to wrap the image. When I used float: left other elements started to sit on top of it. And I am not sure if it is okay to style the image as I did over on the HTML page.*/
+  border: 3px solid white;
+  position: relative;
+  display: inline-block;
+  float: left;
+/* I want to make the image adjust responsively to the size of the browser window.*/
 }
 
 #welcome {
   position: relative;
-  height: 230px;
-  left: 15px
-  right: 15px;
+  width: 66%;
   margin: .5em .5em .5em .5em;
   padding: .25em .25em .25em .25em;
+  clear: right;
+  float: right;
+  display: inline-block;
+  border: 3px solid white;
+
 /* When I try to adjust the padding to move the paragraph text away from the picture, the element below (the social media nav bar) is the only thing that moved. This is getting messier and I am getting more confused! */
 }
 
 .social {
   background-color: #FF5E00;
-  width: 20%;
-  height: 1.5em;
-  padding: 1em 1em 1em 1em;
+  width: 25%;
+  padding: .5em .5em .5em .5em;
   border-width: 3px;
-  border-style: ridge;
+  border-style: solid;
   border-color: white;
   float: right;
+  clear: both;
+  position: relative;
+  display: inline-block;
+  margin-right: 50px;
 }
 
 .social ul {
   margin: 0;
   padding: 0;
+}
 
 .social ul li {
   list-style: none;
 }
-/* Not sure why this isn't working this time... it worked above for class="navigation"*/
 
 .social ul li a {
   display: block;
-  padding: 0px 20px;
+  float: left;
+  padding: 0px 5px;
+}
 
 .bottom {
-  border: 3px solid black;
+  border: 3px solid white;
   width: 30%;
   position: relative;
-  display: block;
+  display: inline-block;
+  margin: 5px;
+  float: left;
+  padding: 10px;
+}
+
+.section-group {
+  position: relative;
+  top: 20px;
+  display: inline-flex;
 }
 
 footer {
   text-align: center;
+  position: relative;
+  clear: both;
 }
