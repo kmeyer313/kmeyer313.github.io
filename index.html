@@ -4,64 +4,59 @@
     <meta charset="utf-8">
     <title>Katie Meyer</title>
     <!--Need to revise title/site name eventually-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
   </head>
   <body>
     <section>
       <h1>Katie Meyer</h1>
     </section>
 
-    <section>
-      <table>
-        <tbody>
-          <tr>
-            <td>About</td>
-            <td>Projects</td>
-            <td><a href="blog/index">Blog</a></td>
-            <td>Resume</td>
-            <td>Contact</td>
-          </tr>
-        </tbody>
-      </table>
+    <nav class="navigation">
+      <ul>
+        <li><a href="blog/about">About</a></li>
+        <li><a href="blog/projects">Projects</a></li>
+        <li><a href="blog/index">Blog</a></li>
+        <li><a href="blog/resume">Resume</a></li>
+        <li><a href="blog/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <aside id="picture">
+      <img src="imgs/badin.jpg" alt="Picture of Me" style="float:left; max-width:31%;"/>
+      <!--Can I style the image like this over here?-->
+    </aside>
+
+    <section id="welcome">
+      <h3>So glad you're here!</h3>
+        <p>I am a former elementary school teacher in the midst of career evolution. I hope to create tools to support teachers to bring "research-based best practice"​ to life effectively and efficiently. I am currently a student at Dev Bootcamp in Chicago and will be a job-ready, full-stack web developer by Spring 2016.</p>
+        <p><em>Eagerly looking forward to working with like minds and educational think tanks...</em></p>
+      <h4>Thanks for stopping by!</h4>
     </section>
 
-    <section>
-      <img src="URL" alt="Picture of Me"/>
-      <!--Add link to picture of me-->
-    </section>
+    <aside class="social">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/katie-meyer-3462a821">LinkedIn</a></li>
+        <li><a href="https://github.com/kmeyer313">GitHub</a></li>
+        <li><a href="https://twitter.com/katesmeyer">Twitter</a></li>
+        <li><a href="https://www.facebook.com/katesmeyer">Facebook</a></li>
+      </ul>
+    </aside>
 
-    <section>
-      <h3>Short Welcome</h3>
-        <p>Professional goal statement to be added later.</p>
-    </section>
-
-    <section>
-      <table>
-        <tbody>
-          <tr>
-            <td><a href="https://www.linkedin.com/in/katie-meyer-3462a821">LinkedIn</a></td>
-            <td><a href="https://github.com/kmeyer313">GitHub</a></td>
-            <td><a href="https://twitter.com/katesmeyer">Twitter</a></td>
-            <td><a href="https://www.facebook.com/katesmeyer">Facebook</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section>
+    <section class="bottom">
       <h3>Recent Projects</h3>
         <p>Need to figure out how to add slideshow of project snapshots.</p>
         <!--Figure out how to add slideshow of project snapshots-->
         <p><a href="URL">See more</a></p>
     </section>
 
-    <section>
+    <section class="bottom">
       <h3>Recent Blog Post</h3>
         <p>Text for <a href="blog/index">title, post date, and beginning of blog post.</a> Need to figure this out later.</p>
         <!--Figure out how to get snippet of blog post, including title, post date, and beginning of post-->
         <p><a href="blog/index">Read more</a></p>
     </section>
 
-    <section>
+    <section class="bottom">
       <h3>Recent Meetups</h3>
 
       <h4>Design 101: Tips and Tricks with Aly Flucky</h4>
@@ -74,9 +69,9 @@
 
     </section>
 
-    <section>
+    <footer>
       <h5>Katie Meyer Website &copy; 2015</h5>
-    </section>
+    </footer>
 
   </body>
 </html>
