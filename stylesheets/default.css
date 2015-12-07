@@ -11,33 +11,10 @@ h1 {
   text-align: center;
 }
 
-.navigation {
-  background-color: #FF5E00;
-  width: 95%;
-  border-width: 3px;
-  border-style: solid;
-  border-color: white;
-  font-size: 125%;
-  padding: 1em 1em 1em 1em;
+footer {
+  text-align: center;
   position: relative;
-  margin: 0 auto;
-}
-
-/*I tried redoing my navigation bar. At first I had used a table in html to create the structure. But after some research, I determined a list would be better. I watched this video and now am a little stuck. I kept some elements form before that I thought I liked, but I would still like to get them centered in the middle. I feel like there has to be an easier way than futzing with the padding, height, and width? Before I had it responsive to the window size. Doesn't seem to be responding anymore. https://www.youtube.com/watch?v=_ovlvYH782c */
-
-.navigation ul {
-  margin: 0;
-  padding: 0;
-}
-
-.navigation ul li {
-  list-style: none;
-}
-
-.navigation ul li a {
-  float: left;
-  display: block;
-  padding: 0px 40px;
+  clear: both;
 }
 
 a:link {
@@ -58,30 +35,38 @@ a:hover {
   font-weight: bold;
 }
 
-#picture {
-  margin: .5em .5em .5em .5em;
-  border: 3px solid white;
-  position: relative;
-  display: inline-block;
+.navigation {
+  background-color: #FF6E19;
+  width: 95%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+  font-size: 125%;
+  padding: 1em 1em 1em 1em;
+  margin: .25em 1% .25em 1%;
   float: left;
-/* I want to make the image adjust responsively to the size of the browser window.*/
+  text-align: center;
 }
 
-#welcome {
-  position: relative;
-  width: 66%;
-  margin: .5em .5em .5em .5em;
-  padding: .25em .25em .25em .25em;
-  clear: right;
-  float: right;
-  display: inline-block;
-  border: 3px solid white;
+/*I tried redoing my navigation bar. At first I had used a table in html to create the structure. But after some research, I determined a list would be better. I watched this video and now am a little stuck. I kept some elements from before that I thought I liked, but I would still like to get them centered in the middle. I feel like there has to be an easier way than futzing with the padding, height, and width? Before I had it responsive to the window size. Doesn't seem to be responding anymore. https://www.youtube.com/watch?v=_ovlvYH782c */
 
-/* When I try to adjust the padding to move the paragraph text away from the picture, the element below (the social media nav bar) is the only thing that moved. This is getting messier and I am getting more confused! */
+.navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  list-style: none;
+}
+
+.navigation ul li a {
+  float: left;
+  display: block;
+  padding: 0px 40px;
 }
 
 .social {
-  background-color: #FF5E00;
+  background-color: #FF6E19;
   width: 25%;
   padding: .5em .5em .5em .5em;
   border-width: 3px;
@@ -89,9 +74,9 @@ a:hover {
   border-color: white;
   float: right;
   clear: both;
-  position: relative;
   display: inline-block;
   margin-right: 50px;
+  text-align: center;
 }
 
 .social ul {
@@ -125,8 +110,21 @@ a:hover {
   display: inline-flex;
 }
 
-footer {
-  text-align: center;
-  position: relative;
-  clear: both;
+#picture {
+  margin: 1em 1em 1em 1em;
+  border: 3px solid white;
+  display: inline-block;
+  float: left;
+/* I want to make the image adjust responsively to the size of the browser window.*/
 }
+
+#welcome {
+  width: 75%;
+  margin: 1.5em .5em 1em .5em;
+  padding: .25em .25em .25em .25em;
+  clear: right;
+  float: right;
+  display: inline-block;
+  border: 3px solid white;
+}
+/* When I try to adjust the padding to move the paragraph text away from the picture, the element below (the social media nav bar) is the only thing that moved. This is getting messier and I am getting more confused! */
