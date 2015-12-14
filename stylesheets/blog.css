@@ -1,16 +1,23 @@
 h1 {
-  background-color: #FF5E00
-  height: 1.5em;
-  border-width: 3px;
+  height: 2em;
+/*  border-width: 3px;
   border-style: solid;
-  border-color: white;
-  font-size: 200%;
-  padding: .5em .5em .5em .5em;
-  position: static;
-  width: 95%;
+  border-color: white; At the moment, this is conflicting with h1 from default.css?*/
+  font-size: 150%;
   margin: 5px 5px 5px 5px;
+  width: 95%;
+  display: block;
+  float: left;
+  clear: both;
 }
-/* Why is the orange background color not showing up? */
+
+img {
+  float:left;
+  clear: both;
+  display: block;
+  margin-right: 10%;
+  margin-left:  10%;
+}
 
 .quote {
   font-family: cursive;
@@ -18,7 +25,21 @@ h1 {
 }
 
 .blogs {
-  border-width: 3px;
-  border-style: dashed;
-  border-color: white;
+  display: inline;
+  float: left;
+  clear: both;
+}
+
+.social {
+  float: right;
+  clear: both;
+  margin-right: 50px;
+}
+
+.social ul {
+  padding: 10px;
+}
+
+.social ul li {
+  display: inline;
 }
