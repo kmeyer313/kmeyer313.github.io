@@ -1,29 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>Arrays and Hashes</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-</head>
-
-<main>
-  <h1 class="quote"> <p>"The journey of a thousand miles begins with a single step." ~ Lao Tzu</p></h1>
-  <h3><a href="../blog/index.html">Return to main blog</a></h3>
-  <h2>Arrays and Hashes</h2>
-  <h4>December 7, 2015</h4>
-  <section>
-    <h3>What are they good for?</h3>
-    <p>Arrays and hashes are helpful ways to collect and organize lots of data. Examples of data that you may want the computer to hold in a collection may be names, numbers, books, accomplishments, movie information (title, year, ratings, actors, etc.), addresses, etc. So what? That seems kind of simple and I could make data tables of those things in Microsoft Word. True, you can do that, but behind the scenes, the way that all gets collected/organized into the computer with arrays and hashes makes it very powerful.</p>
-    <p>Let's just take a look at the syntax that we use to communicate to the computer that we are entering an array or a hash, then we can talk about why it is useful.</p>
-    <p>my_array = ["Katie", "Patrick", "Billy"]</p>
-    <p>my_hash = {"name"=>"Katie, "age"=>10}</p>
-    <p>The array is holding three items that we call "strings." In this case the strings are names. The hash has another piece of data in it, an integer that tells us the ages of the people listed in the array. my_hash has key/value pairs.</p>
-    <p>Here is a simple example to think about the difference about what is going on behind the scenes (in the computer) when I need the data from these collections. Let's say you teach 5th grade and you want to make a roster of the kids in alphabetical order by first name. The array would be a fine collection of data to call on and we can tell the array to sort the names in my_array in alphabetical order.</p>
-    <p>What if you want to group the kiddos up by their age? my_hash can help us do this. This hash would allows us to enter all of the students' names and ages. Then we would be able to come up with a list of their names in alphabetical order, we could group them by age group, or find out how many 9 year olds and 10 year olds there are. In this example, we can do more with the hash. And although I am not savvy enough to know this for sure yet, I bet you could even have the names be returned into an array for the 9 year olds and an array for the 10 year olds!</p>
-    <p>A relevant example that really helps me make sense of the value of something like a hash is to think about looking for a restaurant on Yelp. There are options that allow you to filter/narrow your search by ratings, price, type of food, location, etc. It's my bet that hash is hard at work behind the scenes to present you a smaller selection that fit your criteria. For a "key" like rating, the "value" options you can ask it to narrow down on could be 1, 2, 3, or 4 stars. Then you can tell it what price "values" are best for you. You choose from the options $ $$ $$$. As you filter your preferences, the hash is retrieving the restaurants that meet your criteria.</p>
-    <p>Each restuarant has the same filtering information (ratings: price: type_of_food: location:) but the value of each could vary (1,2,3,4 stars; $ $$ $$ price; American, Asian, Italian, Mexican type of food). Each restaurant has the same "keys" but the "value" for the keys per restaurant can differ.</p>
-  </section>
-</main>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Katie Meyer | Blog | Arrays and Hashes</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css"> -->
+    <!-- for blueberry -->
+    <link rel="stylesheet" href="../stylesheets/blueberry.css">
+    <!-- JS and jquery later
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="javascript/jquery.blueberry.js"></script>
+    <script>
+      $(window).load(function() {
+        $('.blueberry').blueberry();
+      });
+    </script>
+    -->
+  </head>
+  <body>
+    <header>
+      <!-- for logo if wanted
+      <a href="#" id="logo"></a> -->
+      <nav>
+        <a href="#" id="menu-icon"></a>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="../projects/index.html">PROJECTS</a></li>
+          <li><a href="index.html" class="current">BLOG</a></li>
+          <li><a href="../index.html">RESUME</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="clear"></div>
+    <article class="quote">
+      <p>"The journey of a thousand miles begins with a single step." - Lao Tzu</p>
+    </article>
+    <aside>
+      <img src="../imgs/great-wall.jpg" alt="Great Wall of China"/>
+    </aside>
+    <h2>Arrays and Hashes</h2>
+    <h4>December 7, 2015</h4>
+    <section>
+      <h3>What are they good for?</h3>
+      <p>Arrays and hashes are helpful ways to collect and organize lots of data. Examples of data that you may want the computer to hold in a collection may be names, numbers, books, accomplishments, movie information (title, year, ratings, actors, etc.), addresses, etc. So what? That seems kind of simple and I could make data tables of those things in Microsoft Word. True, you can do that, but behind the scenes, the way that all gets collected/organized into the computer with arrays and hashes makes it very powerful.</p>
+      <p>Let's just take a look at the syntax that we use to communicate to the computer that we are entering an array or a hash, then we can talk about why it is useful.</p>
+      <p>my_array = ["Katie", "Patrick", "Billy"]</p>
+      <p>my_hash = {"name"=>"Katie, "age"=>10}</p>
+      <p>The array is holding three items that we call "strings." In this case the strings are names. The hash has another piece of data in it, an integer that tells us the ages of the people listed in the array. my_hash has key/value pairs.</p>
+      <p>Here is a simple example to think about the difference about what is going on behind the scenes (in the computer) when I need the data from these collections. Let's say you teach 5th grade and you want to make a roster of the kids in alphabetical order by first name. The array would be a fine collection of data to call on and we can tell the array to sort the names in my_array in alphabetical order.</p>
+      <p>What if you want to group the kiddos up by their age? my_hash can help us do this. This hash would allows us to enter all of the students' names and ages. Then we would be able to come up with a list of their names in alphabetical order, we could group them by age group, or find out how many 9 year olds and 10 year olds there are. In this example, we can do more with the hash. And although I am not savvy enough to know this for sure yet, I bet you could even have the names be returned into an array for the 9 year olds and an array for the 10 year olds!</p>
+      <p>A relevant example that really helps me make sense of the value of something like a hash is to think about looking for a restaurant on Yelp. There are options that allow you to filter/narrow your search by ratings, price, type of food, location, etc. It's my bet that hash is hard at work behind the scenes to present you a smaller selection that fit your criteria. For a "key" like rating, the "value" options you can ask it to narrow down on could be 1, 2, 3, or 4 stars. Then you can tell it what price "values" are best for you. You choose from the options $ $$ $$$. As you filter your preferences, the hash is retrieving the restaurants that meet your criteria.</p>
+      <p>Each restuarant has the same filtering information (ratings: price: type_of_food: location:) but the value of each could vary (1,2,3,4 stars; $ $$ $$ price; American, Asian, Italian, Mexican type of food). Each restaurant has the same "keys" but the "value" for the keys per restaurant can differ.</p>
+    </section>
+  </body>
 </html>

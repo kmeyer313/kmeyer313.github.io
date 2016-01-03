@@ -1,45 +1,28 @@
-h1 {
-  height: 2em;
-/*  border-width: 3px;
-  border-style: solid;
-  border-color: white; At the moment, this is conflicting with h1 from default.css?*/
-  font-size: 150%;
-  margin: 5px 5px 5px 5px;
-  width: 95%;
-  display: block;
-  float: left;
-  clear: both;
+article.quote {
+  float: left; /* not working */
+  margin: 50px auto;
+  width: 30%; /* change width? */
+  height: auto;
+  padding: 3%;
+  font-family: cursive; /* not working */
+  color: white; /* not working */
 }
-
 img {
-  float:left;
-  clear: both;
-  display: block;
-  margin-right: 10%;
-  margin-left:  10%;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
-
-.quote {
-  font-family: cursive;
-  color: white;
+aside {
+  float: right; /* not working */
+  margin: 50px auto;
+  width: 60%; /* change width? */
+  height: auto;
+  padding: 4%;
 }
-
-.blogs {
+article.blogs {
   display: inline;
-  float: left;
+  float: left; /* not working */
   clear: both;
-}
-
-.social {
-  float: right;
-  clear: both;
-  margin-right: 50px;
-}
-
-.social ul {
-  padding: 10px;
-}
-
-.social ul li {
-  display: inline;
+  text-align: left
 }
