@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Katie Meyer | Blog</title>
+    <title>Katie Meyer | Projects</title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <!-- <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css"> -->
     <!-- for blueberry -->
     <link rel="stylesheet" href="../stylesheets/blueberry.css">
-    <!-- JS and jquery later
+    <!-- JS and jquery later -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <script src="javascript/jquery.blueberry.js"></script>
+    <script src="../javascript/jquery.blueberry.js"></script>
     <script>
       $(window).load(function() {
         $('.blueberry').blueberry();
       });
     </script>
-    -->
+
   </head>
+
   <body>
     <header>
       <!-- for logo if wanted
@@ -26,30 +26,30 @@
         <ul>
           <li><a href="../index.html">HOME</a></li>
           <li><a href="../about.html">ABOUT</a></li>
-          <li><a href="../projects/index.html">PROJECTS</a></li>
-          <li><a href="blog/index.html" class="current">BLOG</a></li>
+          <li><a href="../projects/index.html" class="current">PROJECTS</a></li>
+          <li><a href="../blog/index.html">BLOG</a></li>
           <li><a href="../index.html">RESUME</a></li>
         </ul>
       </nav>
     </header>
     <div class="clear"></div>
 
-    <article class="quote">
-      <p>"The journey of a thousand miles begins with a single step." - Lao Tzu</p>
-    </article>
-    <aside>
-      <img src="../imgs/great-wall.jpg" alt="Great Wall of China"/>
-    </aside>
-    <article class="blogs">
-      <h2><a href="git.html">Version Control and Git</a></h2><br>
-      <h2><a href="css-concepts.html">CSS Concepts</a></h2><br>
-      <h2><a href="arrays-hashes.html">Arrays and Hashes</a></h2><br>
-      <h2><a href="enumerable-methods.html">Enumerable Methods</a></h2><br>
-      <h2><a href="ruby-classes.html">Ruby Classes</a></h2><br>
-      <h2><a href="URL">Blog Post 6</a></h2><br>
-      <h2><a href="URL">Blog Post 7</a></h2><br>
-    </article>
+    <div id="doc">
+        <div id="content">
+          <div class="blueberry">
+            <ul class="slides">
+              <li><img src="http://www.w3newbie.com/wp-content/uploads/inside-gym.png" /></li>
+              <li><img src="http://www.w3newbie.com/wp-content/uploads/push-ups.png" /></li>
+              <li><img src="http://www.w3newbie.com/wp-content/uploads/chest-fly.png" /></li>
+              <li><img src="http://www.w3newbie.com/wp-content/uploads/training.png" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+    <section>
+      <p>I did not write the code for the slides above. I watched <a href="https://www.youtube.com/watch?v=2R-qmsvtSaQ">this</a> video which helped me develop a more responsive website and directed me to open-sourced code that is behind these images. This is what I envisioned when I thought about how I wanted snapshots of projects to be displayed, but at the same time, I don't really know what the projects look like themselves and if this is an appropriate way to get a glimpse. I understand that the code that is behind this is way beyond my abilities right now and that eventually I need to build it on my own.</p>
+    </section>
 
     <div class="clear"></div>
     <footer>
@@ -75,6 +75,5 @@
     <footer class="second">
       <p>Katie Meyer &copy; 2015</p>
     </footer>
-
   </body>
 </html>

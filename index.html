@@ -2,89 +2,113 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Katie Meyer</title>
-    <!--Need to revise title/site name eventually-->
+    <title>Katie Meyer | Home</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <!-- for blueberry -->
+    <link rel="stylesheet" href="stylesheets/blueberry.css">
+    JS and jquery later
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="javascript/jquery.blueberry.js"></script>
+    <script>
+      $(window).load(function() {
+        $('.blueberry').blueberry();
+      });
+    </script>
+
   </head>
   <body>
-    <section>
-      <h1>Katie Meyer</h1>
+    <header>
+      <!-- for logo if wanted
+      <a href="#" id="logo"></a> -->
+      <nav>
+        <a href="#" id="menu-icon"></a>
+        <ul>
+          <li><a href="index.html" class="current">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="projects/index.html">PROJECTS</a></li>
+          <li><a href="blog/index.html">BLOG</a></li>
+          <li><a href="index.html">RESUME</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="clear"></div>
+    <aside>
+      <img src="imgs/badin.jpg" alt="Picture of Me"/>
+    </aside>
+    <article>
+      <h3>Welcome!</h3>
+      <p>I am a former elementary school teacher in the midst of career evolution. I hope to create tools to support teachers to bring "research-based best practice"​ to life effectively and efficiently. I am currently a student at Dev Bootcamp in Chicago and will be a job-ready, full-stack junior web developer by Spring 2016.</p>
+      <p>Eagerly looking forward to working with like minds and educational think tanks!</p>
+      <p><b>Thanks for stopping by!</b></p>
+    </article>
+    <div class="clear"></div>
+    <section class="threes-left">
+      <h3>Recent Projects</h3>
+        <p>See notes on Project page in regards to slides below</p><br>
+        <div id="doc">
+            <div id="content">
+              <div class="blueberry">
+                <ul class="slides">
+                  <li><img src="http://www.w3newbie.com/wp-content/uploads/inside-gym.png" /></li>
+                  <li><img src="http://www.w3newbie.com/wp-content/uploads/push-ups.png" /></li>
+                  <li><img src="http://www.w3newbie.com/wp-content/uploads/chest-fly.png" /></li>
+                  <li><img src="http://www.w3newbie.com/wp-content/uploads/training.png" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      <h4><a href="projects/index.html"><em>See more</em></a></h4>
     </section>
 
-    <nav class="navigation">
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html">Projects</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="index.html">Resume</a></li>
-      </ul>
-    </nav>
-
-    <aside id="picture">
-      <img src="imgs/badin.jpg" alt="Picture of Me" width="228" height="230"/>
-    </aside>
-
-    <section id="welcome">
-      <h3>So glad you're here!</h3>
-        <p>I am a former elementary school teacher in the midst of career evolution. I hope to create tools to support teachers to bring "research-based best practice"​ to life effectively and efficiently. I am currently a student at Dev Bootcamp in Chicago and will be a job-ready, full-stack junior web developer by Spring 2016.</p>
-        <p><em>Eagerly looking forward to working with like minds and educational think tanks!</em></p>
-      <h4>Thanks for stopping by!</h4>
+    <section class="threes-left">
+      <h3>Recent Blog Posts</h3>
+        <p><a href="blog/enumerable-methods.html">Enumerable Methods</a></p>
+        <p>December 14, 2015</p>
+        <p>Snippet of blog post.</p><br>
+        <p><a href="blog/arrays-hashes.html">Arrays and Hashes</a></p>
+        <p>December 7, 2015</p>
+        <p>Snippet of blog post.</p><br>
+        <p><a href="blog/css-concepts.html">CSS Concepts</a></p>
+        <p>November 30, 2015</p>
+        <p>Snippet of blog post.</p><br>
+      <h4><a href="blog/index.html"><em>Read more</em></a></h4>
+        <!--Figure out how to get snippet of blog post, including title, post date, and beginning of post-->
     </section>
 
-
-   <div class="section-group">
-      <section class="bottom">
-        <h3>Recent Projects</h3>
-          <p>Coming Soon!</p>
-          <!--Figure out how to add slideshow of project snapshots-->
-          <h4><a href="index.html">See more</a></h4>
-      </section>
-
-      <section class="bottom">
-        <h3>Recent Blog Posts</h3>
-
-          <p><a href="blog/enumerable-methods.html">Enumerable Methods</a></p>
-          <p>December 14, 2015</p>
-          <p>Snippet of blog post.</p>
-
-          <p><a href="blog/arrays-hashes.html">Arrays and Hashes</a></p>
-          <p>December 7, 2015</p>
-          <p>Snippet of blog post.</p>
-
-          <p><a href="blog/css-concepts.html">CSS Concepts</a></p>
-          <p>November 30, 2015</p>
-          <p>Snippet of blog post.</p>
-
-        <h4><a href="blog/index.html">Read more</a></h4>
-          <!--Figure out how to get snippet of blog post, including title, post date, and beginning of post-->
-      </section>
-
-      <section class="bottom">
-        <h3>Recent Meetups</h3>
-
-        <h4>Design 101: Tips and Tricks with Aly Flucky</h4>
-          <p>Dev Bootcamp Chicago</p>
-          <p>November 4, 2015</p>
-
-        <h4>EdTech Night! Meet Educators Who Learned to Code</h4>
-          <p>Dev Bootcamp Chicago</p>
-          <p>September 23, 2015</p>
-      </section>
-    </div>
-
-    <aside class="social">
-      <ul>
-        <li><a href="mailto:katiemeyer@icloud.com"><img src="imgs/mail-dreamstale47.png"></a></li>
-        <li><a href="https://www.linkedin.com/in/katie-meyer-3462a821"><img src="imgs/linkedin-dreamstale45.png"></a></li>
-        <li><a href="https://github.com/kmeyer313"><img src="imgs/github2-dreamstale35.png"></a></li>
-        <li><a href="https://twitter.com/katesmeyer"><img src="imgs/twitter-dreamstale71.png"></a></li>
-        <li><a href="https://www.facebook.com/katesmeyer"><img src="imgs/facebook-dreamstale25.png"></a></li>
-      </ul>
-    </aside>
-
+    <section class="threes-left">
+      <h3>Recent Meetups</h3>
+      <h4>Design 101: Tips and Tricks with Aly Flucky</h4>
+        <p>Dev Bootcamp Chicago</p>
+        <p>November 4, 2015</p>
+      <br>
+      <h4>EdTech Night! Meet Educators Who Learned to Code</h4>
+        <p>Dev Bootcamp Chicago</p>
+        <p>September 23, 2015</p>
+      <h4><a href="http://www.meetup.com/members/190642886/"><em>Learn more</em></h4><br>
+    </section>
+    <div class="clear"></div>
     <footer>
-      <h5>Katie Meyer Website &copy; 2015</h5>
+      <section class="threes-center">
+        <h3><b>Contact</b></h3>
+        <p><b>link to work email</b></p>
+      </section>
+      <section class="threes-center">
+        <h3>Connect</h3>
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/in/katie-meyer-3462a821"><img src="imgs/linkedin-dreamstale45.png"></a></li>
+          <li><a href="https://github.com/kmeyer313"><img src="imgs/github2-dreamstale35.png"></a></li>
+          <li><a href="https://twitter.com/katesmeyer"><img src="imgs/twitter-dreamstale71.png"></a></li>
+          <li><a href="https://www.facebook.com/katesmeyer"><img src="imgs/facebook-dreamstale25.png"></a></li>
+        </ul>
+      </section>
+      <section class="threes-center">
+        <!-- for logo if wanted -->
+        <img src="#" />
+      </section>
     </footer>
-
+    <div class="clear"></div>
+    <footer class="second">
+      <p>Katie Meyer &copy; 2015</p>
+    </footer>
   </body>
 </html>
