@@ -43,7 +43,7 @@
   <h4>December 14, 2015</h4>
 
   <section>
-    <h3>Christmas Game Time!</h3>
+    <h3>Iteration with Enumerable Methods</h3>
     <p>Alright, Newbs! Time to stretch out this brain again… Hang in there! Christmas break is almost here!</p>
     <p>My dad coincidentally used the word “innumerable” when describing one of his “favorite” politicians when we were talking about politics this week. (I am not here to start a political discourse, so I’ll stop right there with that.) I turned to good old Google to parse out the difference between innumerable and enumerable. What I found makes sense for each word in their separate contexts. Innumerable means so many times it cannot be counted. So from my dad’s perspective, the politician has done something an innumerable amount of times (okay, maybe my dad was exaggerating).</p>
     <p>The idea of innumerable can be a little terrifying in the programming world because if our program runs innumerably, it may crash!? Enumerable is much less intimidating as it describes something that is countable. Enumerate means to mention (a number of things) one by one. In Ruby, enumerable is Ruby’s way of saying that we can get elements out of a collection, one by one, and do something with them. This is incredibly useful for Rubyists!</p>
@@ -85,33 +85,19 @@
 
     <p><em>(Shoutout to my Accountability Group who helped clear up some of my misunderstandings about <code>.each</code>. These last few paragraphs above are are based on their examples and are somewhat of a synthesis of what I learned from them. They rock!)</em></p>
 
-    <p>A basic understanding of <code>.each</code> will help us understand how <code>Enumerable</code> methods work. Now I want to have some fun and zoom into an <code>Enumberable</code> method that I found interesting and learned about more in-depth this week: <code>.each_slice</code>.</p>
+    <p>A basic understanding of <code>.each</code> will help us understand how <code>Enumerable</code> methods work. Now I want to zoom into an <code>Enumberable</code> method that I found interesting and learned about more in-depth this week: <code>.find_all</code>.</p>
 
-    <code><p>.each_slice</p></code>
-    <p>I attempted to use <code>.each_slice</code> in a challenge that required us to define a method that would create groups out of a list of names. It works to a certain extent, but you need to get a little more savvy to meet all the requirements of the challenge. Here is what it <em>can</em> do.</p>
+    <code><p>.find_all</p></code>
 
-    <p>The scenario: it’s Christmas Day and the cousins are getting ready to play Scattergories. They want to break up into teams, so Katie decides she can whip up a <code>Ruby</code> program really quick to sort the cousins into groups. Here is her program.</p>
+    <p>This method will iterate through a collection, such as an array, looking for items that match the condition set in the code block, returning them in a new array. For example, let's say a teacher has a list of students' scores from a test and he wants to know what the lowest scores are. This is how we can use <code>.find_all</code> to iterate through the array and return a new array with only the scores that fit the condition of the code in the block.</p>
 
-    <code><p>cousins = ["Amanda", "Kelsie", "Emylee", "Patrick", "Katie", "Billy", "Maggie", "Alison", "Joseph"]</p>
-    <p>cousins.each_slice(3) { |slice| p slice }</p>
-    <p>p cousins</p></code>
+    <code><p>test_scores = [100, 95, 78, 63, 88, 92, 44, 30, 98]</p></code>
 
-    <p>will print this output to the console:</p>
+    <code><p>p test_scores.find_all {|x| x < 60}</p></code>
 
-    <code><p>["Amanda", "Kelsie", "Emylee"]</p>
-    <p>["Patrick", "Katie", "Billy"]</p>
-    <p>["Maggie", "Alison", "Joseph"]</p>
-    <p>=> ["Amanda", "Kelsie", "Emylee", "Patrick", "Katie", "Billy", "Maggie", "Alison", "Joseph"]</p></code>
+    <p>Which returns an array <code>[44, 30]</code>.
 
-    <p>Sweet! It nicely grouped the cousins into three groups of three. Perfect for Scattergories! Calling <code>.each_slice(n)</code> with an argument n tells <code>Ruby</code> how many people she wants in each group. We can see that the value that is returned (on the last line) is the same as the original array. This tells us that this method is <em>non-destructive</em>, it does not change the original array.</p>
-
-    <p>Hmm, but back to the game. The cousins aren’t happy with the teams. The first two groups are made up of siblings (<code>.each_slice</code> just grabs the items in the order that you enter them, and Katie entered them by thinking through each family at a time). It probably wouldn’t be fair to have siblings on the same team, the members of the third group may feel they are at a disadvantage (although in reality, they would LOVE being on a team with each other).</p>
-
-    <p>Katie has an idea, she’ll apply another method she learned from the week to mix things up a little bit. She revises the program:</p>
-
-
-
-
+    <p>Checkout other <a href="http://ruby-doc.org/core-2.2.3/Enumerable.html">Enumerable methods in Ruby Docs</a> or read more about them in chapter 10 of <em>The Rubyist</em>!</p>
   </section>
 </body>
 
