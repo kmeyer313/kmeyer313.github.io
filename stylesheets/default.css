@@ -105,31 +105,31 @@ nav ul li {
   clear: both;
 }
 aside {
+  width: 25%;
   float: left;
-  margin: 50px auto;
-  width: 25%; /* change width? */
-  height: auto;
-  padding: 4%;
+  margin: 60px 1% 2% 1%;
+  text-align: center;
 }
 article {
+  width: 70%;
   float: right;
-  margin: 50px auto;
-  width: 60%; /* change width? */
-  height: auto;
-  padding: 3%;
+  margin: 60px 1% 2% 1%;
+  text-align: left;
 }
 section.threes-left {
-  width: 15%;
+  width: 29%;
   float: left;
-  margin: 2% 2%;
+  margin: 2% 1%;
   text-align: left;
-  padding-left: 10%;
+  /*padding-left: 1%;*/
+  /*border: solid white;*/
 }
 section.threes-center {
   width: 29%;
   float: left;
-  margin: 2% 2%;
+  margin: 2% 1%;
   text-align: center;
+  /*border: solid white;*/
 }
 section {
   width: 100%;
@@ -141,7 +141,6 @@ footer {
   background: #00B2B2;
   width: 100%;
   overflow: hidden;
-  opacity: 0.90;
 }
 footer p, footer h3 {
   color: #333333;
