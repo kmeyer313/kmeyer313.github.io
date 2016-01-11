@@ -1,0 +1,30 @@
+.content {
+  background-color: white;
+  margin: 75px 40px;
+  padding: 20px;
+  text-align: center
+}
+
+.left-column {
+  /*position: relative;*/
+  display: inline-block;
+  height: 100%;
+  width: 45%;
+  float: left;
+  border: solid 2px black;
+  margin: 20px 5px;
+  padding: 20px;
+  text-align: left;
+}
+
+.right-column {
+  /*position: relative;*/
+  display: inline-block;
+  height: 100%;
+  width: 45%;
+  float: left;
+  border: solid 2px black;
+  margin: 20px 5px;
+  padding: 20px;
+  text-align: left;
+}
