@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto 0 auto;
   border: 0;
   padding: 0;
 }
@@ -140,7 +140,7 @@ section {
 footer {
   background: #00B2B2;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 footer p, footer h3 {
   color: #333333;
@@ -156,13 +156,18 @@ ul.social li img {
   height: 50px;
 }
 footer.second {
+  width: 100%;
   border-top: 1px solid #4D4E50;
   background-color: #333333;
   max-height: 50px;
   text-align: center;
   opacity: 0.95;
-  color: #FFF; /* Where did this go?? It isn't showing up */
 }
+
+footer.second p {
+color: #FFF;
+}
+
 /*--------------MEDIA!!---------------*/
 @media screen and (max-width: 478px) {
   body {
