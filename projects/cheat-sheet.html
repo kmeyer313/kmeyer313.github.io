@@ -29,16 +29,88 @@
       <h1>CSS Cheat Sheet</h1>
       <p>Under Construction</p>
         <article class="top-box">
-          <p>TOP</p>
+          <h3>Basics</h3>
           <img src="cheat-sheet-wireframe.jpg" alt="cheat sheet wireframe" class="small-image"/>
           <p>Here is the wireframe with the content I am working on including. Should be finished by Monday evening.</p>
+          <h4>Linking Stylesheets</h4>
+            <p> External Stylesheets: <span class="code">&lt;link href=&quot;css/styles.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;/&gt;</span></p>
+          <h4>Selectors</h4>
+          <table>
+            <tr>
+              <th>SELECTOR</th>
+              <th>MEANING</th>
+              <th>CSS EXAMPLE</th>
+              <th>HTML SYNTAX</th>
+            </tr>
+            <tr>
+              <td>UNIVERSAL</td>
+              <td>Applies to all elements in the document</td>
+              <td class="code">* {}</td>
+              <td class="code">n/a</td>
+            </tr>
+            <tr>
+              <td>TYPE</td>
+              <td>Matches element names</td>
+              <td class="code">h1, h2, h3 {}</td>
+              <td class="code">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</td>
+            </tr>
+            <tr>
+              <td>CLASS</td>
+              <td>Matches an element whose class attribute has a value that matches the one specified after the period (or full stop) symbol</td>
+              <td class="code">.value {}</td>
+              <td class="code">&lt;section class=&quot;value&quot;&gt;</td>
+            </tr>
+            <tr>
+              <td>ID</td>
+              <td>Matches an element whose id attribute has a value that matches the one specified after the pound or hash symbol</td>
+              <td class="code">#value {}</td>
+              <td class="code">&lt;section id=&quot;value&quot;&gt;</td>
+            </tr>
+            <tr>
+              <td>CHILD</td>
+              <td>Matches an element that is a direct child of another</td>
+              <td class="code">li&gt;a {}</td>
+              <td class="code">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</td>
+            </tr>
+            <tr>
+              <td>DESCENDANT</td>
+              <td>Matches an element that is a descendent of another specified element (not just a direct child of that element)</td>
+              <td class="code">p a {}</td>
+              <td class="code">&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;</td>
+            </tr>
+            <tr>
+              <td>ADJACENT SIBLING</td>
+              <td>Matches an element that is the next sibling of another</td>
+              <td class="code">h1+p</td>
+              <td class="code"></td>
+            </tr>
+            <tr>
+              <td>GENERAL SIBLING</td>
+              <td>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+              <td class="code">h1~p</td>
+              <td class="code"></td>
+            </tr>
+          </table>
+    <div class="clear"></div>
+        <h6 class="source">The information from this table is from <em><a href="http://htmlandcssbook.com/">HTML &amp; CSS Design and Build Websites</a></em> by Jon Duckett</h6>
         </article>
+
+<!-- TWO COLUMNS SECTION -->
+    <div class="clear"></div>
         <article class="left-box">
-          <p>LEFT</p>
+          <h3>Boxes</h3>
+          <hr>
+          <h3>Text</h3>
+          <hr>
+          <h3>Color</h3>
         </article>
 
         <article class="right-box">
-          <p>RIGHT</p>
+          <h3>Layout</h3>
+          <hr>
+          <h3>Lists and Tables</h3>
+          <hr>
+          <h3>Images</h3>
         </article>
 
 
