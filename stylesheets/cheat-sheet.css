@@ -5,7 +5,17 @@
   text-align: center
 }
 
-.left-column {
+.top-box {
+  display: block;
+  height: 100%;
+  width: 90%;
+  border: solid 2px black;
+  margin: 20px 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.left-box {
   /*position: relative;*/
   display: inline-block;
   height: 100%;
@@ -17,7 +27,7 @@
   text-align: left;
 }
 
-.right-column {
+.right-box {
   /*position: relative;*/
   display: inline-block;
   height: 100%;
@@ -27,4 +37,10 @@
   margin: 20px 5px;
   padding: 20px;
   text-align: left;
+}
+
+.small-image {
+  width: 300px;
+  height: 440px;
+  /*display: inline-block;*/
 }
