@@ -27,94 +27,146 @@
 <!-- NEW CONTENT -->
     <section class="content">
       <h1>CSS Cheat Sheet</h1>
-      <p>Under Construction</p>
-        <article class="top-box">
-          <h3>Basics</h3>
-          <img src="cheat-sheet-wireframe.jpg" alt="cheat sheet wireframe" class="small-image"/>
-          <p>Here is the wireframe with the content I am working on including. Should be finished by Monday evening.</p>
-          <h4>Linking Stylesheets</h4>
-            <p> External Stylesheets: <span class="code">&lt;link href=&quot;css/styles.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;/&gt;</span></p>
-          <h4>Selectors</h4>
-          <table>
-            <tr>
-              <th>SELECTOR</th>
-              <th>MEANING</th>
-              <th>CSS EXAMPLE</th>
-              <th>HTML SYNTAX</th>
-            </tr>
-            <tr>
-              <td>UNIVERSAL</td>
-              <td>Applies to all elements in the document</td>
-              <td class="code">* {}</td>
-              <td class="code">n/a</td>
-            </tr>
-            <tr>
-              <td>TYPE</td>
-              <td>Matches element names</td>
-              <td class="code">h1, h2, h3 {}</td>
-              <td class="code">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</td>
-            </tr>
-            <tr>
-              <td>CLASS</td>
-              <td>Matches an element whose class attribute has a value that matches the one specified after the period (or full stop) symbol</td>
-              <td class="code">.value {} OR p.value {}</td>
-              <td class="code">&lt;section class=&quot;value&quot;&gt;</td>
-            </tr>
-            <tr>
-              <td>ID</td>
-              <td>Matches an element whose id attribute has a value that matches the one specified after the pound or hash symbol</td>
-              <td class="code">#value {}</td>
-              <td class="code">&lt;section id=&quot;value&quot;&gt;</td>
-            </tr>
-            <tr>
-              <td>CHILD</td>
-              <td>Matches an element that is a direct child of another</td>
-              <td class="code">li&gt;a {}</td>
-              <td class="code">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</td>
-            </tr>
-            <tr>
-              <td>DESCENDANT</td>
-              <td>Matches an element that is a descendent of another specified element (not just a direct child of that element)</td>
-              <td class="code">p a {}</td>
-              <td class="code">&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;</td>
-            </tr>
-            <tr>
-              <td>ADJACENT SIBLING</td>
-              <td>Matches an element that is the next sibling of another</td>
-              <td class="code">h1+p</td>
-              <td class="code"></td>
-            </tr>
-            <tr>
-              <td>GENERAL SIBLING</td>
-              <td>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
-              <td class="code">h1~p</td>
-              <td class="code"></td>
-            </tr>
-          </table>
-    <div class="clear"></div>
-        <h6 class="source">The information from this table is from <em><a href="http://htmlandcssbook.com/">HTML &amp; CSS Design and Build Websites</a></em> by Jon Duckett</h6>
-        </article>
+      <h6 class="source">The information on this page comes from <em><a href="http://htmlandcssbook.com/">HTML &amp; CSS Design and Build Websites</a></em> by Jon Duckett</h6>
+      <article class="top-box">
+        <h3>Basics</h3>
+        <img src="cheat-sheet-wireframe.jpg" alt="cheat sheet wireframe" class="small-image"/>
+        <p>Here is the wireframe with the content I am working on including. Should be finished by Monday evening.</p>
+        <h4>Linking Stylesheets</h4>
+          <p> External Stylesheets: <span class="code">&lt;link href=&quot;css/styles.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;/&gt;</span></p>
+        <h4>Selectors</h4>
+        <table>
+          <tr>
+            <th>SELECTOR</th>
+            <th>MEANING</th>
+            <th>CSS EXAMPLE</th>
+            <th>HTML SYNTAX</th>
+          </tr>
+          <tr>
+            <td>UNIVERSAL</td>
+            <td>Applies to all elements in the document</td>
+            <td class="code">* {}</td>
+            <td class="code">n/a</td>
+          </tr>
+          <tr>
+            <td>TYPE</td>
+            <td>Matches element names</td>
+            <td class="code">h1, h2, h3 {}</td>
+            <td class="code">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</td>
+          </tr>
+          <tr>
+            <td>CLASS</td>
+            <td>Matches an element whose class attribute has a value that matches the one specified after the period (or full stop) symbol</td>
+            <td class="code">.value {} OR p.value {}</td>
+            <td class="code">&lt;section class=&quot;value&quot;&gt;</td>
+          </tr>
+          <tr>
+            <td>ID</td>
+            <td>Matches an element whose id attribute has a value that matches the one specified after the pound or hash symbol</td>
+            <td class="code">#value {}</td>
+            <td class="code">&lt;section id=&quot;value&quot;&gt;</td>
+          </tr>
+          <tr>
+            <td>CHILD</td>
+            <td>Matches an element that is a direct child of another</td>
+            <td class="code">li&gt;a {}</td>
+            <td class="code">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</td>
+          </tr>
+          <tr>
+            <td>DESCENDANT</td>
+            <td>Matches an element that is a descendent of another specified element (not just a direct child of that element)</td>
+            <td class="code">p a {}</td>
+            <td class="code">&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;</td>
+          </tr>
+          <tr>
+            <td>ADJACENT SIBLING</td>
+            <td>Matches an element that is the next sibling of another</td>
+            <td class="code">h1+p</td>
+            <td class="code"></td>
+          </tr>
+          <tr>
+            <td>GENERAL SIBLING</td>
+            <td>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+            <td class="code">h1~p</td>
+            <td class="code"></td>
+          </tr>
+        </table>
+      </article>
 
 <!-- TWO COLUMNS SECTION -->
     <div class="clear"></div>
-        <article class="left-box">
-          <h3>Boxes</h3>
-          <img src="box-model.gif" alt="box model"/>
-          <!-- Using display-->
+      <article class="left-box">
+        <h3>Boxes</h3>
+          <p><b>BLOCK-LEVEL ELEMENTS</b> start on a new line (<span class="code">&lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;li&gt;</span>)</p>
+          <p><b>INLINE ELEMENTS</b> flow in between surrounding text (<span class="code">&lt;img&gt;, &lt;b&gt;, &lt;i&gt;</span>)</b></p>
+          <p>You can control how much space each box takes up by setting the width of the boxes (sometimes the height, too).</p>
+          <p>To separate boxes, you can use borders, margins, padding, and background colors.</p>
+        <img src="box-model.gif" alt="box model"/>
+        <h4>USING DISPLAY</h4>
+          <p><span class="code">display: inline;</span></p>
+          <p>causes a block-level element to act like an inline element</p>
+          <p><span class="code">display: block;</span></p>
+          <p>causes an inline element to act like a block-level element</p>
+          <p><span class="code">display: inline-block;</span></p>
+          <p>causes a block-level element to flow like an inline element, while retaining other features of a block-level element</p>
+          <p><span class="code">display: none;</span></p>
+          <p>hides an element from the page; the element acts as though it is not on the page at all</p>
 
-          <hr>
-          <h3>Text</h3>
-          <hr>
-          <h3>Color</h3>
-        </article>
+        <hr>
 
-        <article class="right-box">
-          <h3>Layout</h3>
-          <hr>
-          <h3>Lists and Tables</h3>
-          <hr>
-          <h3>Images</h3>
-        </article>
+        <h3>Text</h3>
+          <!-- typeface terminology -->
+        <h4>TYPEFACE</h4>
+          <p><span id="serif">serif</span></p>
+          <p>extra details on the end of the mains strokes of the letters (ie. Georgia, Times New Roman)</p>
+          <p><span id="sans-serif">sans-serif</span></p>
+          <p>straight ends to letters, much cleaner design (ie. Arial, Veranda)</p>
+          <p><span id="monospace">monospace</span></p>
+          <p>every letter has same width (ie. Courier)</p>
+          <p><span id="cursive">cursive</span></p>
+          <p>have joining strokes or other cursive characteristics or other cursive characteristics, such as handwriting styles (ie. Comic Sans MS, Monotype Corsiva)</p>
+          <p><span id="fantasy">fantasy</span></p>
+          <p>usually decorative and often used for titles; not designed for long bodies of text (ie. Impact, Haettenschweiler)</p>
+        <h4>UNITS OF TYPE SIZE</h4>
+          <img src="units-type-size.png" alt="units of type size"/>
+
+        <hr>
+
+        <h3>Color</h3>
+          <img src="color-tips.png" alt="color tips"/>
+      </article>
+
+      <article class="right-box">
+        <h3>Layout</h3>
+          <!-- positioning; screen sizes, resolutions, page sizes, fixed width vs liquid layouts, grids -->
+          <p><b>POSITIONING SCHEMAS</b></p>
+          <ul>
+            <li><b>Normal Flow</b> This is the default behavior where every block-level element appears on a new line.</li>
+            <li><b>Relative</b> This moves an element from the position it would be in normal flow, shifting it to the top, right, bottom, or left of where it would have been placed. This does not affect the position of the surrounding elements.</li>
+            <li><b>Absolute</b> This positions the element in relation to its containing element. It is taken out of normal flow, not affecting the position of any surrounding elements. These elements move as users scroll up and down the page.</li>
+            <li><b>Fixed</b> A form of absolute positioning but it positions the element in relation to the browser window. Elements with fixed positioning do not affect the position of surrounding elements and do not move when the user scrolls up or down the page.</li>
+            <li><b>Floating</b> This allows you to take that element out of normal flow and position it to the far left or right of a containing box. The floated element becomes a block-level element around which other content can flow.</li>
+            <li><b>z-index</b> When you move any element from normal flow, boxes can overlap. This property allows you to control which box appears on top.</li>
+          </ul>
+          <p><b>FIXED WIDTH VS LIQUID</b></p>
+          <ul>
+            <li><b>Fixed width layout</b> designs do not change size as the user increases or decreases the size of their browser window. Measurements tend to be given in <b>pixels</b>.</li>
+            <li><b>Liquid layouts</b> designs stretch and contract as the user increases or decreases the size of their browser window. They tend to use percentages Measurements tend to be given in <b>pixels</b>.</li>
+          <p><b>POSSIBLE LAYOUTS</b></p>
+          <p>(for 960 px wide 12 column grid)</p>
+          <img src="grid1.png" alt="grid 1"/>
+          <img src="grid2.png" alt="grid 2"/>
+
+        <hr>
+
+        <h3>Lists and Tables</h3>
+          <!-- bullet point styles; adding borders, backgrounds to tables -->
+
+        <hr>
+
+        <h3>Images</h3>
+          <!-- size and alignment; background images -->
+      </article>
 
 
     </section>
