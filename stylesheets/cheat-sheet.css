@@ -5,7 +5,7 @@ hr {
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
-    border-width: 1px;
+    border-width: 2px;
 }
 
 table {
@@ -42,7 +42,12 @@ a:hover {
   text-decoration: none;
   font-weight: bold;
 }
-
+ul {
+  list-style-type: circle;
+}
+li {
+  margin: 10px 25px;
+}
 .code {
   font-family: monospace;
   color: gray;
@@ -52,7 +57,7 @@ a:hover {
   background-color: white;
   margin: 75px 40px;
   padding: 20px;
-  text-align: center
+  text-align: center;
 }
 
 .top-box {
@@ -60,7 +65,7 @@ a:hover {
   height: 100%;
   width: 90%;
   border: solid 2px black;
-  margin: 20px 5px;
+  margin: 20px 25px;
   padding: 20px;
   text-align: center;
 }
@@ -69,7 +74,7 @@ a:hover {
   /*position: relative;*/
   display: inline-block;
   height: 100%;
-  width: 45%;
+  width: 43%;
   float: left;
   border: solid 2px black;
   margin: 20px 5px;
@@ -81,8 +86,8 @@ a:hover {
   /*position: relative;*/
   display: inline-block;
   height: 100%;
-  width: 45%;
-  float: left;
+  width: 43%;
+  float: right;
   border: solid 2px black;
   margin: 20px 5px;
   padding: 20px;
@@ -93,4 +98,24 @@ a:hover {
   width: 300px;
   height: 440px;
   /*display: inline-block;*/
+}
+#serif {
+  font-family: serif;
+  color: gray;
+}
+#sans-serif {
+  font-family: sans-serif;
+  color: gray;
+}
+#monospace {
+  font-family: monospace;
+  color: gray;
+}
+#cursive {
+  font-family: cursive;
+  color: gray;
+}
+#fantasy {
+  font-family: fantasy;
+  color: gray;
 }

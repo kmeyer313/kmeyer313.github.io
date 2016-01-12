@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto 0 auto;
   border: 0;
   padding: 0;
 }
@@ -8,6 +8,7 @@ body {
   font: 20px/26px Futura, "Tw Cen MT", Helvetica;
   color: #333333;
   margin: 0;
+  width: 90%;
 }
 h3 {
   line-height: 110%;
@@ -20,11 +21,12 @@ h4 {
 p {
   padding: 1%;
 }
-img {
+#profile {
   text-align: center;
   max-width: 100%;
   height: auto;
   width: auto;
+  border-radius: 100px;
 }
 a:link {
   color: white;
@@ -68,7 +70,7 @@ nav {
   display: hidden;
   width: 40px;
   height: 40px;
-  background: url(http://www.w3newbie.com/wp-content/uploads/icon.png) center;
+  /*background: url(http://www.w3newbie.com/wp-content/uploads/icon.png) center;*/
 }
 a:hover#menu-icon {
   border-radius: 4px 4px 0 0;
@@ -117,7 +119,7 @@ article {
   text-align: left;
 }
 section.threes-left {
-  width: 29%;
+  width: 31.3%;
   float: left;
   margin: 2% 1%;
   text-align: left;
@@ -125,7 +127,7 @@ section.threes-left {
   /*border: solid white;*/
 }
 section.threes-center {
-  width: 29%;
+  width: 31.3%;
   float: left;
   margin: 2% 1%;
   text-align: center;
@@ -140,7 +142,7 @@ section {
 footer {
   background: #00B2B2;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 footer p, footer h3 {
   color: #333333;
@@ -156,13 +158,18 @@ ul.social li img {
   height: 50px;
 }
 footer.second {
+  width: 100%;
   border-top: 1px solid #4D4E50;
   background-color: #333333;
   max-height: 50px;
   text-align: center;
   opacity: 0.95;
-  color: #FFF; /* Where did this go?? It isn't showing up */
 }
+
+footer.second p {
+color: #FFF;
+}
+
 /*--------------MEDIA!!---------------*/
 @media screen and (max-width: 478px) {
   body {
@@ -212,8 +219,3 @@ footer.second {
 code {
 /* I would like to format the code to look nicer - differentiate between inline code and code blocks */
 }
-
-
-
-
-
