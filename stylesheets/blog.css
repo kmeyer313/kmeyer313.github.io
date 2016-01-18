@@ -1,3 +1,6 @@
+section {
+  float: left;
+}
 .quote {
   width: 100%;
   font-family: cursive;
@@ -25,4 +28,11 @@
   clear: both;
   text-align: left;
   padding: 20px;
+}
+.blog-posts {
+  padding: 30px;
+}
+ol {
+  list-style: circle;
+  margin-left: 60px
 }
