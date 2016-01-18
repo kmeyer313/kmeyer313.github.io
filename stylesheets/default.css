@@ -5,9 +5,10 @@
 }
 body {
   background: #00B2B2;
-  font: 20px/26px Futura, "Tw Cen MT", Helvetica;
+  font: 20px/26px Avenir, Euphemea, "Tw Cen MT", Helvetica;
   color: #333333;
   margin: 0;
+  margin-top: 60px;
   width: 100%;
 }
 h3 {
@@ -21,20 +22,13 @@ h4 {
 p {
   padding: 1%;
 }
-#profile {
-  text-align: center;
-  max-width: 100%;
-  height: auto;
-  width: auto;
-  border-radius: 100px;
-}
 a:link {
-  color: white;
+  color: #333333;
   text-decoration: none;
   font-weight: bold;
 }
 a:visited {
-  color: white;
+  color: #333333;
   text-decoration: none;
   font-weight: bold;
 }
@@ -53,26 +47,27 @@ header {
   z-index: 100;
   opacity: 0.90;
 }
-
 /* no logo yet */
-#logo {
-  margin: 20px;
-  float: left;
-  width: 200px;
-  height: 60px;
-  background: url(#) no-repeat center;
-}
 nav {
   float: right;
   padding: 5px 20px 20px 0;
 }
-#menu-icon {
-  display: hidden;
-  width: 40px;
-  height: 40px;
-  /*background: url(http://www.w3newbie.com/wp-content/uploads/icon.png) center;*/
+nav a:link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
-a:hover#menu-icon {
+nav a:visited {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover#menu-icon {
   border-radius: 4px 4px 0 0;
 }
 ul {
@@ -82,29 +77,6 @@ nav ul li {
   display: inline-block;
   float: left;
   padding: 10px;
-}
-.current {
-  color: #333333;   /*didn't seem to work*/
-  text-decoration: underline;
-}
-
-/* begin blueberry, jquery stuff*/
-#doc {
-  margin: 60px 0 0 0;
-}
-#content {
-  margin: 0 auto;
-  max-width: 1140px; /*need to resize this!! too big for the section*/
-/*  margin-top: 110px;*/
-}
-.blueberry {
-  max-width: 960px;
-  margin-top: 110px;
-}
-/* end blueberry, jquery stuff */
-
-.clear {
-  clear: both;
 }
 aside {
   width: 25%;
@@ -117,27 +89,34 @@ article {
   float: right;
   margin: 60px 1% 2% 1%;
   text-align: left;
+  background-color: white;
+  padding: 0px 5px;
+  border-radius: 10px;
 }
 section.threes-left {
-  width: 31.3%;
+  width: 30%;
   float: left;
   margin: 2% 1%;
   text-align: left;
-  /*padding-left: 1%;*/
-  /*border: solid white;*/
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 5px;
 }
 section.threes-center {
-  width: 31.3%;
+  width: 30%;
   float: left;
   margin: 2% 1%;
   text-align: center;
-  /*border: solid white;*/
 }
-section {
+section.threes-center img {
+  border-radius: 60%;
+  max-height: 100px;
+}
+/*section {
   width: 100%;
   float: left;
   margin: 5% 5%;
-  text-align: left;
+  text-align: left;*/
 }
 footer {
   background: #00B2B2;
@@ -165,10 +144,58 @@ footer.second {
   text-align: center;
   opacity: 0.95;
 }
-
 footer.second p {
 color: #FFF;
 }
+.about {
+  margin: 0px 40px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.current {
+  color: #333333;   /*didn't seem to work*/
+  text-decoration: underline;
+}
+.blueberry {
+  max-width: 960px;
+  margin-top: 110px;
+}
+/* end blueberry, jquery stuff */
+
+.clear {
+  clear: both;
+}
+#profile {
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 100px;
+}
+/*#logo {
+  margin: 20px;
+  float: left;
+  width: 200px;
+  height: 60px;
+  background: url(#) no-repeat center;
+}*/
+#menu-icon {
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: url(http://www.w3newbie.com/wp-content/uploads/icon.png) center;
+}
+#doc {
+  margin: 60px 0 0 0;
+}
+#content { /* What is this?? */
+  margin: 0 auto;
+  max-width: 1140px; /*need to resize this!! too big for the section
+/*  margin-top: 110px;*/
+}
+
+
 
 /*--------------MEDIA!!---------------*/
 @media screen and (max-width: 478px) {

@@ -1,28 +1,28 @@
-article.quote {
-  float: left; /* not working */
-  margin: 50px auto;
-  width: 30%; /* change width? */
-  height: auto;
-  padding: 3%;
-  font-family: cursive; /* not working */
-  color: white; /* not working */
+.quote {
+  width: 100%;
+  font-family: cursive;
+  color: white;
+  display: inline-block;
+  background-color: #00B2B2;
+  text-align: center;
+  font-size: 150%;
 }
-img {
+/*img {
   text-align: center;
   max-width: 100%;
   height: auto;
   width: auto;
-}
-aside {
-  float: right; /* not working */
-  margin: 50px auto;
-  width: 60%; /* change width? */
-  height: auto;
-  padding: 4%;
-}
-article.blogs {
+  display: inline-block;
+}*/
+/*aside img {
+  margin: 0px auto;
+  width: 200%; /* change width?
+  border-radius: 20%;*/
+}*/
+.blogs {
   display: inline;
-  float: left; /* not working */
+  float: left;
   clear: both;
-  text-align: left
+  text-align: left;
+  padding: 20px;
 }
