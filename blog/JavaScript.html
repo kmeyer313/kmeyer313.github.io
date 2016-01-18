@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Katie Meyer | Blog | JavaScript</title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <!-- <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css"> -->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
     <!-- for blueberry -->
     <link rel="stylesheet" href="../stylesheets/blueberry.css">
     <!-- JS and jquery later
@@ -36,9 +36,10 @@
     <article class="quote">
       <p>"The journey of a thousand miles begins with a single step." - Lao Tzu</p>
     </article>
-    <aside>
+<!--     <aside>
       <img src="../imgs/great-wall.jpg" alt="Great Wall of China"/>
-    </aside>
+    </aside> -->
+     <div class="blog-posts">
     <h2>JavaScript vs. Ruby</h2>
     <h4>January 3, 2016</h4>
     <section>
@@ -51,5 +52,6 @@
       <p>On the other side, JavaScript's function constructor does this a little differently. The class of Person is created with the function keyword and the initialization happens within the code block in <code>{}</code> and uses <b>this</b> to create a new instance of the class (as we see happening at the bottom with the new variable <code>john</code>). Rather than grouping other methods of the class within the class beginning and end as in Ruby, JavaScript simply requires you to use the code <code>Person.prototype.fullname = function() {}</code>, with the expression for what we want the function to do within the brackets. The instance variables are stored in the function with less distinction than those of Ruby classes and the function constructor actually takes up fewer lines of code to do the same thing. Where Ruby uses keywords like <code>def/end</code>, JavaScript uses lots of brackets <code>{}</code>, parentheses <code>()</code>, and semicolons <code>;</code>.</p>
       <p>I can see that function constructors may reduce the lines of code and make it easy to construct a new function anywhere within the program, but I still think I will prefer Ruby's classes because of the clear beginning and end boundaries. I'm sure I'll also come to love constructing functions all over my JavaScript programs, though!
     </section>
+  </div>
   </body>
 </html>

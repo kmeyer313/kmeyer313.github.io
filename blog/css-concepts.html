@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Katie Meyer | Blog | CSS Concepts</title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <!-- <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css"> -->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
     <!-- for blueberry -->
     <link rel="stylesheet" href="../stylesheets/blueberry.css">
     <!-- JS and jquery later
@@ -36,9 +36,10 @@
     <article class="quote">
       <p>"The journey of a thousand miles begins with a single step." - Lao Tzu</p>
     </article>
-    <aside>
+<!--     <aside>
       <img src="../imgs/great-wall.jpg" alt="Great Wall of China"/>
-    </aside>
+    </aside> -->
+    <div class="blog-posts">
     <h2>CSS Concepts</h2>
     <h4>November 30, 2015</h4>
 
@@ -46,39 +47,63 @@
       <h3>What are the differences between relative, absolute, fixed, and static positioning?</h3>
       <p>First and foremost: Make sure you look over your work to make sure you didn't forget important little pieces that can impact your entire page! You know when you are writing a paragraph in a word processor and you forget to include punctuation here and there like a period at the end of a sentence? It can throw off the format and overall flow of the paper, right? In the same way, if you forget end syntax when writing CSS like a semicolon or a closing curly bracket, the way elements are positioned can be completely thrown off. So before you go any further with trying to position your page in CSS, validate your code <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">here</a> to make sure you haven't forgotten any important syntax. Many frustrations disappeared when I found little errors like forgetting to include that end syntax!</p>
       <p>Now. It's going to get a little complicated and I don't consider myself an expert yet, but here are a few things I have found to be helpful when working with positioning. Here are some notes I've surmised about each applied to one of our positioning challenges (see screenshot below when referenced):</p>
-      <ul><strong>STATIC (Div 1)</strong>
-        <li>This is the default position, that means this is what the elements will automatically take on for their position on a page. (Being the default, you do not have to delagate the position in your CSS stylesheet.)</li>
-        <li>A static element will automatically assume the width of the page or the browser window. See the "Div 1" box in the image below. It takes up the whole width of the page.</li>
-        <li>In static, block elements naturally stack on top of each other. This is the natural flow of the page. If Div 2, Div 3, and Div 4 were all static, they would line up under Div 1, looking just like it but with their different colors.
-        <li>You cannot tell a static element how far to go from the top, right, bottom, or left of the page. To do this, we need to move on to relative positioning.</li>
-        <li>However, <em>it is important to know</em>, that blocks in static can have margins. In the example below, the Div 1 element DOES have a bottom margin of 20 pixels that <em>will</em> affect Div 2, as you will see in the next section.</li>
-      </ul>
+      <p><strong>STATIC (Div 1)</strong></p>
+        <p>This is the default position, that means this is what the elements will automatically take on for their position on a page. (Being the default, you do not have to delagate the position in your CSS stylesheet.)</p>
+        <p>A static element will automatically assume the width of the page or the browser window. See the "Div 1" box in the image below. It takes up the whole width of the page.</p>
+        <p>In static, block elements naturally stack on top of each other. This is the natural flow of the page. If Div 2, Div 3, and Div 4 were all static, they would line up under Div 1, looking just like it but with their different colors.</p>
+        <p>You cannot tell a static element how far to go from the top, right, bottom, or left of the page. To do this, we need to move on to relative positioning.</p>
+        <p>However, <em>it is important to know</em>, that blocks in static can have margins. In the example below, the Div 1 element DOES have a bottom margin of 20 pixels that <em>will</em> affect Div 2, as you will see in the next section.</p>
 
-      <ul><strong>RELATIVE (Div 2)</strong>
-        <li>Relative positioned elements want to follow the natural flow of the page like they do in static. However, we can be more specific about where we want a relative positioned element to be by giving them directional properties (how far from left, top, right, bottom).</li>
-        <li>In the image below, it is hard to see at a glance that Div 2 is in the natural flow of the page, but knowing what is going on behind the scenes will help.</li>
-        <li>Div 2 has some other properties that have been delegated to it that make it look so far away from Div 1:
+      <p><strong>RELATIVE (Div 2)</strong></p>
+        <p>Relative positioned elements want to follow the natural flow of the page like they do in static. However, we can be more specific about where we want a relative positioned element to be by giving them directional properties (how far from left, top, right, bottom).</p>
+        <p>In the image below, it is hard to see at a glance that Div 2 is in the natural flow of the page, but knowing what is going on behind the scenes will help.</p>
+        <p>Div 2 has some other properties that have been delegated to it that make it look so far away from Div 1:</p>
           <ol>
             <li>It is given dimensions of width and height, 200 pixels for each.</li>
             <li>It has been pushed to the left 50 pixels.</li>
             <li>Think carefully now, Div 2 is set to be 0 pixels from the top of the preceeding element in the flow -Div 1- but why is it so far away? Do you remember at the end of the Static section when I said that Div 1 has a bottom margin of 20 pixels? Well, that's why Div 2 is so far away from Div 1! It is respecting the properties of the previous element in the flow, therefore the top of Div 2 is starting exactly at the bottom of the margin of Div 1.</li>
           </ol>
-        </li>
-      </ul>
-      <p>At this poing, my web pages only use static and relative positioning. I cannot think of a current need for absolute or fixed. Nonetheless, here is what I understand about them.</p>
-      <ul><strong>ABSOLUTE (Div 3)</strong>
-        <li>An element with absolute positioning ABSOLUTELY wants to stay where it has been assigned in relation to the browser window.</li>
-        <li>It does not impact the flow of static or relative positioned elements and will sit on top of other elements, as you can see below, Div 3 is sitting on top of Div 2.</li>
-        <li>It can be given dimensions of width and height, and also directional properties of top, right, bottom, left.</li>
-        <li>Things start to get tricky when an element with absolute position is nested in another element that has relative, absolute, or fixed value. But basically, it will absolutely position itself relative to its parent element.</li>
-      </ul>
-      <ul><strong>FIXED (Div 4)</strong>
-        <li>An element with a fixed position is much like an element in absolute position but it <em>will <strong>never</strong> respect any of its parents positions</em>.</li>
-        <li>It will always position itself in relation to the browser window.</li>
-        <li>In the image below, this isn't captured, but if you were to scroll up and down the page where the div boxes are, Div 4 would stay in that exact same location.</li>
-      </ul>
+      <p><strong>ABSOLUTE (Div 3)</strong></p>
+        <p>An element with absolute positioning ABSOLUTELY wants to stay where it has been assigned in relation to the browser window.</p>
+        <p>It does not impact the flow of static or relative positioned elements and will sit on top of other elements, as you can see below, Div 3 is sitting on top of Div 2.</p>
+        <p>It can be given dimensions of width and height, and also directional properties of top, right, bottom, left.</p>
+        <p>Things start to get tricky when an element with absolute position is nested in another element that has relative, absolute, or fixed value. But basically, it will absolutely position itself relative to its parent element.</p>
+      <p><strong>FIXED (Div 4)</strong></p>
+        <p>An element with a fixed position is much like an element in absolute position but it <em>will <strong>never</strong> respect any of its parents positions</em>.</p>
+        <p>It will always position itself in relation to the browser window.</p>
+        <p>In the image below, this isn't captured, but if you were to scroll up and down the page where the div boxes are, Div 4 would stay in that exact same location.</p><br>
       <p>Well this is what I have figured out so far. I have found that floats, padding, and margins really throw me off when it comes to working with positioning. I'm looking forward to learning more about those and become more skilled with positioning!</p>
     </section>
     <img src="../imgs/positioning-screenshot.png" alt="Positioning Screenshot"/>
+  </div>
+
+    <div class="clear"></div>
+
+
+    <footer>
+      <section class="threes-center">
+        <h3><b>Contact</b></h3>
+        <a href="mailto:katiemeyer@icloud.com"><img src="../imgs/mail-dreamstale47.png"></a>
+        <!-- <p><b>link to work email</b></p> -->
+      </section>
+      <section class="threes-center">
+        <h3>Connect</h3>
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/in/katie-meyer-3462a821"><img src="../imgs/linkedin-dreamstale45.png"></a></li>
+          <li><a href="https://github.com/kmeyer313"><img src="../imgs/github2-dreamstale35.png"></a></li>
+          <li><a href="https://twitter.com/katesmeyer"><img src="../imgs/twitter-dreamstale71.png"></a></li>
+          <li><a href="https://www.facebook.com/katesmeyer"><img src="../imgs/facebook-dreamstale25.png"></a></li>
+        </ul>
+      </section>
+      <section class="threes-center">
+<!--         <h3>(Logo)</h3> -->
+        <!-- for logo if wanted -->
+        <img src="https://res.cloudinary.com/keep/image/fetch/t_post_large,f_auto/https://s3.amazonaws.com/production-ol-images/191ace45231c0a62eb22db3aed193011.jpg"/>
+      </section>
+    </footer>
+    <div class="clear"></div>
+    <footer class="second">
+      <p>Katie Meyer &copy; 2015</p>
+    </footer>
   </body>
 </html>
