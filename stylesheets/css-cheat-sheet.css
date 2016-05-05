@@ -48,6 +48,7 @@ ul {
 li {
   margin: 10px 25px;
 }
+
 .code {
   font-family: monospace;
   color: gray;
@@ -58,6 +59,7 @@ li {
   margin: 75px 40px;
   padding: 20px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .top-box {
@@ -68,6 +70,7 @@ li {
   margin: 20px 25px;
   padding: 20px;
   text-align: center;
+  border-radius: 5px;
 }
 
 .left-box {
