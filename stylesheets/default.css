@@ -147,12 +147,12 @@ footer.second {
 footer.second p {
 color: #FFF;
 }
-.about {
+/*.about {
   margin: 0px 40px;
   background-color: white;
   border-radius: 10px;
   padding: 10px 20px;
-}
+}*/
 .current {
   color: #333333;   /*didn't seem to work*/
   text-decoration: underline;
