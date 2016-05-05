@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Katie Meyer | Blog | Tech</title>
+    <title>Katie Meyer | Blog | NoSQL</title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
     <!-- for blueberry -->
@@ -45,10 +45,10 @@
         <p>Database management systems (DBMS) have been evolving over time. Relational databases took rise in the mid-80s and have dominated the market since then. Relational databases splatter data across tables where it is stored and from where it can be retrieved. SQL is the standard language for dealing with relational databases that is good for some things like transactions and reporting. But as object-programming languages began to rise in the 90s, a movement began for object oriented databases. At the time, SQL databases were so integrated that object databases were hard to implement. So relational databases dominated through the 2000s. But the growth of the internet and increase of traffic on internet sites have brought about change and challenges for databases. One way to deal with the growth was to buy bigger "boxes" to run the data through; another approach was to spread it out across lots and lots of little boxes, clusters... which SQL was not designed for. As relational databases were becomming less capable to meet new demands, new approaches were needed. Companies like Google and Amazon developed their own DBMS that inspired the NoSQL movement.</p>
         <p>How NoSQL got its name is kind of a fluke. It was the hashtag for a meetup to talk abut "open source distributed and non relational databases" organized by Johan Oskarsson in the late 2000s. NoSQL can be read as 'non SQL', 'non relational', and 'not only SQL'. There is not a simple definition of NoSQL databases, but they have some common characteristics: non-relational, open-source, cluster-friendly, for the 21st century web, and schema-less (although there is some implicit schema embedded). There are four main categories of NoSQL DBMS, the first three are <b>aggregate-oriented</b>: <b>key-value</b>, <b>document</b>, and <b>column-family</b>. The other category of NoSQL DBMS is <b>graph</b>. Fowler says that aggregate databases are able to take things that are scattered about and move them into bigger lumps whereas graph databases take things apart and let you break them down into smaller units and work with those smaller units more carefully.</p>
         <p>When deciding what kind of database you need to use for a project, you have to ask "How do you want to work with your data?" Martin Fowler poses three questions that help us grasp some of the big ideas of these types of DBMS:</p>
-        <ul>
-          <li><b>1) Question:</b> Do you tend to work with the same aggregates all the time? <b>Answer:</b> take an aggregate-oriented approach</li>
-          <li><b>2) Question:</b> Do you want to break things up and jump across lots and lots of relationships in a complex structure? <b>Answer:</b> take a graph approach</li>
-          <li><b>3) Question:</b> Is the tabular structure working well for you? <b>Answer:</b> stick with the relational approach</li>
+        <ul id="nosql-qa">
+          <li><b>1) Question:</b> Do you tend to work with the same aggregates all the time?<p><b>Answer:</b> take an aggregate-oriented approach</p></li>
+          <li><b>2) Question:</b> Do you want to break things up and jump across lots and lots of relationships in a complex structure?<p><b>Answer:</b> take a graph approach</p></li>
+          <li><b>3) Question:</b> Is the tabular structure working well for you?<p><b>Answer:</b> stick with the relational approach</p></li>
         </ul>
         <p>While there is much more to learn about NoSQL DBMS, Fowler says there are two main reasons why you'd want to use a NoSQL database: 1) for large scale data (a need that will continue to grow) and 2) easier development. While it seems that NoSQL might be the direction of the future, it really depends on the needs of the problem you are working on. A multi-pronged approach will be necessary for years to come as the needs of the internet and database management systems continue to evolve.</p>
       </div>
