@@ -22,7 +22,7 @@
       <!-- for logo if wanted
       <a href="#" id="logo"></a> -->
       <nav>
-        <a href="#" id="menu-icon"></a>
+        <!-- <a href="#" id="menu-icon"></a> -->
         <ul>
           <li><a href="../index.html">HOME</a></li>
           <li><a href="../about.html">ABOUT</a></li>
@@ -33,23 +33,20 @@
       </nav>
     </header>
     <div class="clear"></div>
-    <article class="quote">
-      <p>"The journey of a thousand miles begins with a single step." - Lao Tzu</p>
-    </article>
-<!--     <aside>
-      <img src="../imgs/great-wall.jpg" alt="Great Wall of China"/>
-    </aside> -->
-    <div class="blog-posts">
-  <h2>Ruby Classes</h2>
-  <h4>December 21, 2015</h4>
-  <section>
-    <h3>Keeping it Simple</h3>
-    <p>Ruby classes are a great way to hold a collection of methods that can be used on an instance of the class. We have been using methods of a variety of classes - String, Integer, Array, and Hash primarily. The cool thing about Ruby is that you can create your own class and methods. Every time you create a new instance of a class, it will be able to call any of the methods from the class. </p>
-    <p>Here is a very simple class that has a few methods within it, just to make the point of creating methods for a particular class, creating new instances of a class, and calling methods on the instances.</p>
-    <p><img src="../imgs/catClass.png" alt="class Cat"/></p>
-    <p>In this very elementary example, we can see that an instance variable, @name, is initialized upon creation of a new instance of the Cat class. The instance variable can be used in any of the methods created within the class. The methods created in the class can be called on new instances of the class (as we can see at the bottom, outside of the class, where two new instances are created). If I were to call the .purr method on an instance of the String class, we would get an error that there is no purr method for the String class.</p>
-    <p>Of course there are much more interesting methods we can write to bring the Cat class to life, but for now, hopefully this gives someone new to Ruby a basic understanding of classes!
-  </section>
-</div>
-</body>
+      <p id="quote">"The journey of a thousand miles begins with a single step." - Lao Tzu</p>
+    <div class="clear"></div>
+<!-- <aside><img src="../imgs/great-wall.jpg" alt="Great Wall of China"/></aside> -->
+    <div class="container">
+      <h2>Ruby Classes</h2>
+      <h4>December 21, 2015</h4>
+      <div>
+        <h3>Keeping it Simple</h3>
+        <p>Ruby classes are a great way to hold a collection of methods that can be used on an instance of the class. We have been using methods of a variety of classes - String, Integer, Array, and Hash primarily. The cool thing about Ruby is that you can create your own class and methods. Every time you create a new instance of a class, it will be able to call any of the methods from the class. </p>
+        <p>Here is a very simple class that has a few methods within it, just to make the point of creating methods for a particular class, creating new instances of a class, and calling methods on the instances.</p>
+        <p><img src="../imgs/catClass.png" alt="class Cat example"/></p>
+        <p>In this very elementary example, we can see that an instance variable, @name, is initialized upon creation of a new instance of the Cat class. The instance variable can be used in any of the methods created within the class. The methods created in the class can be called on new instances of the class (as we can see at the bottom, outside of the class, where two new instances are created). If I were to call the .purr method on an instance of the String class, we would get an error that there is no purr method for the String class.</p>
+        <p>Of course there are much more interesting methods we can write to bring the Cat class to life, but for now, hopefully this gives someone new to Ruby a basic understanding of classes!
+      </div>
+    </div>
+  </body>
 </html>
